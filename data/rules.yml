@@ -1,8 +1,3 @@
-version: "2.0"
-
-rules:
-
-- rule: Say goodbye anytime the user says goodbye
-  steps:
-  - intent: ask_knows_fr_name
-  - action: action_check_existence
+version https://git-lfs.github.com/spec/v1
+oid sha256:2b21041eb170023c15b5157ac40cf9a02f52627954f7f4293c943578185aa1d0
+size 467

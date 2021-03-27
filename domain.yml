@@ -5,10 +5,35 @@ actions:
 
 intents:
   - ask_knows_fr_name
-  - ask_knows_fr_name_var
+  - ask_knows_en_name
+  - ask_good_morning
+  - say_no_power
+  - ask_wizard_late
+  - ask_if_pass
+  - outside_scope
 
 entities:
   - lotr_fr_names
+  - lotr_en_name
+  - generic_name
+
+responses:
+  utter_complex_morning:
+  - text: "What do you mean? Do you wish me a good morning,
+          or mean that it is a good morning whether I want it or not;
+          or that you feel good this morning; or that it is a morning to be good on?"
+          
+  utter_saruman_wound:
+  - text: "I will draw you, Saruman, as poison is drawn from a wound!"
+  
+  utter_wizard_never_late:
+  - text: "A wizard is never late, nor is he early. He arrives precisely when he means to!"
+
+  utter_you_shall_not_pass:
+  - text: "You... shall not... pass!"
+
+  utter_unknown:
+  - text: "I don't know. I don't have any answers. I must see the head of my order. He is both wise and powerful. Trust me, he’ll know what to do."
 
 session_config:
   session_expiration_time: 60
