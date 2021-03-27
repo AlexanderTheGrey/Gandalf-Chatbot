@@ -1,0 +1,17 @@
+version: "2.0"
+
+nlu:
+- intent: ask_knows_fr_name
+  examples: |
+    - do you know [bilbo](lotr_fr_name)?
+    - is [bilbo](lotr_fr_name) your friend?
+    - is [bilbo](lotr_fr_name) someone you know?
+    - is [frank](lotr_fr_name) your friend?
+    - do you know of [john](lotr_fr_name)?
+    - is [john](lotr_fr_name) your friend?
+    - is [dan](lotr_fr_name) your friend?
+    - is [bob](lotr_fr_name) your friend?
+
+- intent: asks_knows_fr_name_var
+  examples: |
+    - Is bilbo your friend?
