@@ -11,13 +11,27 @@ intents:
   - ask_wizard_late
   - ask_if_pass
   - outside_scope
+  - tell_wish_not_happened
+  - ask_fool
+  - greet
+  - say_goodbye
+  - ask_name
 
 entities:
-  - lotr_fr_names
+  - lotr_fr_name
   - lotr_en_name
   - generic_name
 
 responses:
+  utter_greet:
+  - text: "Hello my friend."
+
+  utter_say_goodbye:
+  - text: "Farewell to you."
+
+  utter_say_name:
+  - text: "I am Gandalf."
+
   utter_complex_morning:
   - text: "What do you mean? Do you wish me a good morning,
           or mean that it is a good morning whether I want it or not;
@@ -32,8 +46,18 @@ responses:
   utter_you_shall_not_pass:
   - text: "You... shall not... pass!"
 
+  utter_see_such_times:
+  - text: "So do I... So do I, and so do all who live to see such times.
+           But that is not for them to decide. All we have to decide is what to do with the
+           time that is given us."
+
+  utter_fool:
+  - text: "Fool of a Took!"
+
   utter_unknown:
-  - text: "I don't know. I don't have any answers. I must see the head of my order. He is both wise and powerful. Trust me, he’ll know what to do."
+  - text: "I don't know. I don't have any answers.
+           I must see the head of my order. He is both
+           wise and powerful. Trust me, he’ll know what to do."
 
 session_config:
   session_expiration_time: 60

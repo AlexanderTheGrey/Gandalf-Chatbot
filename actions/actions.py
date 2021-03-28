@@ -21,7 +21,7 @@ class ActionCheckExistence(Action):
             r = randint(0, 1)
 
             for blob in tracker.latest_message['entities']:
-                name = blob['value']
+                name = blob['value'].lower()
                 friend_responses = [f"Yes, {name} is my old friend.", f"Ah yes, my old friend {name}."]
                 enemy_responses = [f"No, {name} is a wretched soul from the darkest depths of Middle-earth.", f"A disgusting soul {name} is."]
                 if name in self.friend_knowledge:
@@ -29,6 +29,6 @@ class ActionCheckExistence(Action):
                 elif name in self.enemy_knowledge:
                     dispatcher.utter_message(text=enemy_responses[r])
                 else:
-                    dispatcher.utter_message(text=f"I know not of who you speak of")
+                    dispatcher.utter_message(text=f"I know not of who you speak.")
 
             return []
